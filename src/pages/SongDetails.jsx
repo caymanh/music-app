@@ -11,7 +11,7 @@ import {
 
 const SongDetails = () => {
   const dispatch = useDispatch();
-  const { songid } = useParams();
+  const { songid, id: artistId } = useParams();
   const { activeSong, isPlaying } = useSelector((state) => state.player);
   const { data: songData, isFetching: isFetchingSongDetails } =
     useGetSongDetailsQuery({ songid });
@@ -37,7 +37,7 @@ const SongDetails = () => {
 
   return (
     <div className="flex flex-col">
-      <DetailsHeader artistId="" songData={songData} />
+      <DetailsHeader artistId={artistId} songData={songData} />
       <div className="mb-10">
         <h2 className="text-white text-3xl font-bold">Lyrics:</h2>
 
@@ -45,7 +45,12 @@ const SongDetails = () => {
           {/* Check if there is lyrics. If yes, map over lyrics. If no, show 'no lyrics found' */}
           {songData?.sections[1].type === "LYRICS" ? (
             songData?.sections[1]?.text.map((line, i) => (
-              <p className="text-gray-400 text-base my-1">{line}</p>
+              <p
+                key={`lyrics-${line}-${i}`}
+                className="text-gray-400 text-base my-1"
+              >
+                {line}
+              </p>
             ))
           ) : (
             <p className="text-gray-400 text-base my-1">
@@ -57,6 +62,7 @@ const SongDetails = () => {
       {/* Add Related Songs component */}
       <RelatedSongs
         data={data}
+        artistId={artistId}
         isPlaying={isPlaying}
         activeSong={activeSong}
         handlePauseClick={handlePauseClick}
