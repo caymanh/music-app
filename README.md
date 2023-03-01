@@ -1,136 +1,70 @@
-# Project Lyrics
+# Music App
 
-Develop an elegant React.js Music Application. 
+![badge](https://img.shields.io/badge/license-MIT-brightgreen)
 
-Check out the complete project requirements [here](https://docs.google.com/document/d/13PeFwRlPEhMw_HPyrIrInvQuKaVWnpNmcv-y3NA208s/edit?usp=sharing)
+## Table of Content
 
-# Contributing
+  - [Description](#description)
 
-When contributing to this repository, please first discuss the change you wish to make via issue.
-Please note we have a [code of conduct](CODE_OF_CONDUCT.md), please follow it in all your interactions with the project.
+  - [Installation](#installation)
 
+  - [Usage](#usage)
 
-## System Requirements
+  - [Licence](#licence)
 
-To get started with development, you need to install few tools
+  - [Contributing](#contributing)
 
-1. git 
-   
-   `git` version 2.13.1 or higher. Download [git](https://git-scm.com/downloads) if you don't have it already.
+  - [Questions](#questions)
 
-   To check your version of git, run:
+ ### Description
 
-   ```shell
-    git --version
-   ```
+ Music App is a React-based music application that utilizes React lifecycle methods to query and play songs based on user searches. The app has four pages - Discover, Around You, Top Artists, and Top Charts.
 
-2. node 
-   
-   `node` version 16.15.1 or higher. Download [node](https://nodejs.org/en/download/) if you don't have it already.
+ The Discover page enables users to toggle between different music genre and discover new songs.
+ 
+ The Around You page shows users popular songs in their geolocations.
+ 
+ The Top Artists page displayes popular artists.
 
-   To check your version of node, run:
+ Users are also able to search for artists and songs using the search bar, as well as use the application as a music player to listen to their favorite songs.
 
-   ```shell
-    node --version
-   ```
+ The app utilizes the Shazam Core and ipify APIs to obtain music data and identify the user's geolocation.
 
-3. npm
-  
-   `npm` version 5.6.1 or higher. You will have it after you install node.
+ The live app can be accessed [here](https://lyriks-musically-app.netlify.app/).
 
-   To check your version of npm, run:
+ <p align="center">
+    <img alt="Screenshot of Music App 1" src="https://github.com/caymanh/google-book-search/blob/main/client/public/img/google-book-search-01.JPG">
+</p>
+ <p align="center">
+    <img alt="Screenshot of Music App 2" src="https://github.com/caymanh/google-book-search/blob/main/client/public/img/google-book-search-03.JPG">
+</p>
+ 
 
-   ```shell
-    npm --version
-   ```
+### Installation
 
-## Setup
+The application can be installed by using the following command: 
 
-To set up a development environment, please follow these steps:
+```bash
+git clone https://github.com/caymanh/music-app.git
+```
 
-1. Clone the repo
+### Usage
 
-   ```shell
-    git clone https://github.com/JavaScript-Mastery-PRO/project1_team4_repository.git
-   ```
+The application can be invoked by using the following commands: 
 
-2. Change directory to the project directory
+```bash
+npm install
+npm run dev
+```
 
-    ```shell
-    cd project1_team4_repository
-    ```
+### Licence
 
-3. Install the dependencies
-   
-    ```shell
-     npm install
-    ```
+This application is covered by the [MIT](https://choosealicense.com/licenses/mit/) licence.
 
-    If you get an error, please check the console for more information.
+### Contributing
 
-    If you don't get an error, you are ready to start development.
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-4. Run the app
-   
-    ```shell
-    npm run dev
-    ```
+### Questions
 
-    Project will be running in the browser.
-
-    Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-## Issues
-
-You've found a bug in the source code, a mistake in the documentation or maybe you'd like a new feature? You can help us by [submitting an issue on GitHub](https://github.com/orgs/JavaScript-Mastery-PRO/projects/8). Before you create an issue, make sure to search the issue archive -- your issue may have already been addressed!
-
-Please try to create bug reports that are:
-
-- _Reproducible._ Include steps to reproduce the problem.
-- _Specific._ Include as much detail as possible: which version, what environment, etc.
-- _Unique._ Do not duplicate existing opened issues.
-- _Scoped to a Single Bug._ One bug per report.
-
-
-## Pull Request
-
-There are 2 main work flows when dealing with pull requests:
-
-* Pull Request from a [forked repository](https://help.github.com/articles/fork-a-repo)
-* Pull Request from a branch within a repository
-
-Here we are going to focus on 2. Creating a Topical Branch:
-
-
-1. First, we will need to create a branch from the latest commit on master. Make sure your repository is up to date first using
-
-   ```bash
-    git pull origin main
-   ```
-
-   *Note:* `git pull` does a `git fetch` followed by a `git merge` to update the local repo with the remote repo. For a more detailed explanation, see [this stackoverflow post](http://stackoverflow.com/questions/292357/whats-the-difference-between-git-pull-and-git-fetch).
-
-2. To create a branch, use `git checkout -b <new-branch-name> [<base-branch-name>]`, where `base-branch-name` is optional and defaults to `main`. 
-   
-   Use a standard convention for branch names. For example, `<your-name>-dev`. It will be easier to track your pull requests if you use this convention.
-   
-   I'm going to create a new branch called `jsm-dev` from the `main` branch and push it to github.
-
-   ```bash
-    git checkout -b jsm-dev main
-    git push origin jsm-dev
-   ```
-
-3. To create a pull request, you must have changes committed to your new branch.
-
-4. Go to [Pull Requests](https://github.com/JavaScript-Mastery-PRO/project1_team4_repository/pulls) and click on the `New Pull Request` button.
-
-5. Select the `main` branch as the `base` branch and the `jsm-dev` branch as the `compare` branch.
-
-6. Follow the template and fill in the proper information for the pull request.
-
-7. Click on the `Submit` button.
-
-8. You have successfully created a pull request. Now wait for mentor approval. Once approved, you can merge the pull request.
-
-#
+Please [contact me](https://github.com/caymanh) if you have any questions regarding the application:
