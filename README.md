@@ -33,12 +33,8 @@
  The live app can be accessed [here](https://lyriks-musically-app.netlify.app/).
 
  <p align="center">
-    <img alt="Screenshot of Music App 1" src="https://github.com/caymanh/google-book-search/blob/main/client/public/img/google-book-search-01.JPG">
+    <img alt="Screenshot of Music App" src="https://github.com/caymanh/music-app/blob/main/src/assets/lyriks-musically-app.png">
 </p>
- <p align="center">
-    <img alt="Screenshot of Music App 2" src="https://github.com/caymanh/google-book-search/blob/main/client/public/img/google-book-search-03.JPG">
-</p>
- 
 
 ### Installation
 
